@@ -30,7 +30,7 @@ public class Book {
     @Column( nullable = false)
     private String isbn;
 
-    @Column( name="publisher_name", nullable = false, unique = true)
+    @Column( name="publisher_name", nullable = false)
     private String publisherName;
 
     @ManyToOne( fetch = FetchType.LAZY, cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE })
